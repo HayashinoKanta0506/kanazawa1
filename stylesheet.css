@@ -15,18 +15,18 @@ h1{
 }
 
 .z-index_test {
-    height:  200px;             /* 高さ指定 */
-    width:  200px;              /* 幅指定 */
-    background-color: #FF5722;  /* 背景色指定 */
-    position:  relative;        /* 位置指定 */
-    z-index: 10;                /* 重なり順指定 */
+    height:  200px;            
+    width:  200px;             
+    background-color: #FF5722;  
+    position:  relative;        
+    z-index: 10;              
 }
 .z-index_test2 {
-    height:  200px;             /* 高さ指定 */
-    width:  200px;              /* 幅指定 */
-    background-color: #03A9F4;  /* 背景色指定 */
-    position:  absolute;        /* 位置指定 */
-    top: 70px;                  /* 位置指定 */
-    left: 100px;                /* 位置指定 */
-    z-index: 100;               /* 重なり順指定 */
+    height:  200px;             
+    width:  200px;           
+    background-color: #03A9F4;  
+    position:  absolute;        
+    top: 70px;                  
+    left: 100px;             
+    z-index: 100;              
 }
