@@ -13,11 +13,3 @@ h1{
     font-size: 60px;
     text-align: center;
 }
-.box{
-  position: relative;
-}
-.bottom-left {
-  position: absolute;
-  bottom: 25px;
-  left: 25px;
-}
