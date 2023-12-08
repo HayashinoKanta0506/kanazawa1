@@ -10,7 +10,11 @@
     <div class="header">
         <h1>ポイント交換    </h1>
     </div>
-    <h5>所有ポイント:　　ポイント</h5>
+    <script>
+      var point = 300;
+      document.write("<h5>" + "所有ポイント" + point + "ポイント" + "</h5>");
+    </script>
+    </style>
     <h3>景品一覧</h3>
     <div class="aaa">
         <h4>3ポイント景品</h4>
@@ -41,15 +45,6 @@
         }
     </style>
     </ul>  
-    <table>
-    <tr>
-    <td><button>ボタン</button></td>
-    <td><button>ボタン</button></td>
-    <td><button>ボタン</button></td>
-    <td><button>ボタン</button></td>
-    <td><button>ボタン</button></td>
-    </tr>
-    </table>
     <br><br><br>
     <div class="bbb">
         <h4>5ポイント景品</h4>
@@ -124,7 +119,7 @@
         <img src ="css/pa12.jpg"  width = "160" height = "160">
         <h2><a href="https://tedori.jp/">手取りフィッシュランド<br>一日フリーパス</a></h2>
         <img src ="css/0948c_0000563928_1.jpg" width = "160" height = "160">
-        <h2><a href="https://www.ishikawazoo.jp/">石川動物園<br>入館チケット</a></h2> 
+        <h2><a href="https://www.ishikawazoo.jp/">石川動物園<br>入園チケット</a></h2> 
         <style>
             ul {
               display: flex;
@@ -139,8 +134,331 @@
               margin: 0 100px;
             }
         </style>
+
+    <div class="btn-container">
+      <button id="btn3" >ポイント交換</button>
+      <button id="btn4" >ポイント交換</button>
+      <button id="btn5" >ポイント交換</button>
+      <button id="btn6" >ポイント交換</button>
+      <button id="btn7" >ポイント交換</button>
+      <button id="btn8" >ポイント交換</button>
+      <button id="btn9" >ポイント交換</button>
+      <button id="btn10" >ポイント交換</button>
+      <button id="btn11" >ポイント交換</button>
+      <button id="btn12" >ポイント交換</button>
+      <button id="btn13" >ポイント交換</button>
+      <button id="btn14" >ポイント交換</button>
+      <button id="btn15" >ポイント交換</button>
+      <button id="btn16" >ポイント交換</button>
+      <button id="btn17" >ポイント交換</button>
+      <button id="btn18" >ポイント交換</button>
+    </div>
+    <div id="mask" class="hidden"></div>
+    <section id="modal" class="hidden">
+      <p>３ポイント消費してオリジナルタオルを購入しました</p>
+    </section>
+    <div id="mask2" class="hidden"></div>
+    <section id="modal2" class="hidden">
+      <p>３ポイント消費してオリジナルクリアファイルを購入しました</p>
+    </section>
+    <div id="mask3" class="hidden"></div>
+    <section id="modal3" class="hidden">
+      <p>３ポイント消費してオリジナルボールペンを購入しました</p>
+    </section>
+    <div id="mask4" class="hidden"></div>
+    <section id="modal4" class="hidden">
+      <p>３ポイント消費してオリジナルティッシュを購入しました</p>
+    </section>
+    <div id="mask5" class="hidden"></div>
+    <section id="modal5" class="hidden">
+      <p>５ポイント消費してレトルト・ゴールドカレーを購入しました</p>
+    </section>
+    <div id="mask6" class="hidden"></div>
+    <section id="modal6" class="hidden">
+      <p>５ポイント消費してレトルト・チャンピオンカレーを購入しました</p>
+    </section>
+    <div id="mask7" class="hidden"></div>
+    <section id="modal7" class="hidden">
+      <p>５ポイント消費してレトルト・豆腐カレーを購入しました</p>
+    </section>
+    <div id="mask8" class="hidden"></div>
+    <section id="modal8" class="hidden">
+      <p>５ポイント消費してレトルト・ゴーゴーカレーを購入しました</p>
+    </section>
+    <div id="mask9" class="hidden"></div>
+    <section id="modal9" class="hidden">
+      <p>7ポイント消費してグリルオーツカ・商品券1000円分を購入しました</p>
+    </section>
+    <div id="mask10" class="hidden"></div>
+    <section id="modal10" class="hidden">
+      <p>7ポイント消費して菊一・商品券1000円分を購入しました</p>
+    </section>
+    <div id="mask11" class="hidden"></div>
+    <section id="modal11" class="hidden">
+      <p>7ポイント消費してカズナカシマ・商品券1000円分を購入しました</p>
+    </section>
+    <div id="mask12" class="hidden"></div>
+    <section id="modal12" class="hidden">
+      <p>7ポイント消費してピノ・商品券1000円分を購入しました</p>
+    </section>
+    <div id="mask13" class="hidden"></div>
+    <section id="modal13" class="hidden">
+      <p>１０ポイント消費して能登牛・引換券を購入しました</p>
+    </section>
+    <div id="mask14" class="hidden"></div>
+    <section id="modal14" class="hidden">
+      <p>１０ポイント消費して能登島水族館・入館チケットを購入しました</p>
+    </section>
+    <div id="mask15" class="hidden"></div>
+    <section id="modal15" class="hidden">
+      <p>１０ポイント消費して手取りフィッシュランド・一日フリーパスを購入しました</p>
+    </section>
+    <div id="mask16" class="hidden"></div>
+    <section id="modal16" class="hidden">
+      <p>１０ポイント消費して石川動物園・入園チケットを購入しました</p>
+    </section>
+
+    <script>
+    const btn3 = document.getElementById('btn3');
+    const mask = document.getElementById('mask');
+    const modal = document.getElementById('modal');
+
+    btn3.addEventListener('click', () => {
+      mask.classList.remove('hidden');
+      modal.classList.remove('hidden');
+    });
+
+      mask.addEventListener('click', () => {
+      mask.classList.add('hidden');
+      modal.classList.add('hidden');
+    });
+
+    const btn4 = document.getElementById('btn4');
+    const mask2 = document.getElementById('mask2');
+    const modal2 = document.getElementById('modal2');
+
+    btn4.addEventListener('click', () => {
+      mask2.classList.remove('hidden');
+      modal2.classList.remove('hidden');
+    });
+
+      mask2.addEventListener('click', () => {
+      mask2.classList.add('hidden');
+      modal2.classList.add('hidden');
+    });
+
+    const btn5 = document.getElementById('btn5');
+    const mask3 = document.getElementById('mask3');
+    const modal3 = document.getElementById('modal3');
+
+    btn5.addEventListener('click', () => {
+      mask3.classList.remove('hidden');
+      modal3.classList.remove('hidden');
+    });
+
+      mask3.addEventListener('click', () => {
+      mask3.classList.add('hidden');
+      modal3.classList.add('hidden');
+    });
+
+    const btn6 = document.getElementById('btn6');
+    const mask4 = document.getElementById('mask4');
+    const modal4 = document.getElementById('modal4');
+
+    btn6.addEventListener('click', () => {
+      mask4.classList.remove('hidden');
+      modal4.classList.remove('hidden');
+    });
+
+      mask4.addEventListener('click', () => {
+      mask4.classList.add('hidden');
+      modal4.classList.add('hidden');
+    });
+
+    const btn7 = document.getElementById('btn7');
+    const mask5 = document.getElementById('mask5');
+    const modal5 = document.getElementById('modal5');
+
+    btn7.addEventListener('click', () => {
+      mask5.classList.remove('hidden');
+      modal5.classList.remove('hidden');
+    });
+
+      mask5.addEventListener('click', () => {
+      mask5.classList.add('hidden');
+      modal5.classList.add('hidden');
+    });
+
+    const btn8 = document.getElementById('btn8');
+    const mask6 = document.getElementById('mask6');
+    const modal6 = document.getElementById('modal6');
+
+    btn8.addEventListener('click', () => {
+      mask6.classList.remove('hidden');
+      modal6.classList.remove('hidden');
+    });
+
+      mask6.addEventListener('click', () => {
+      mask6.classList.add('hidden');
+      modal6.classList.add('hidden');
+    });
+
+    const btn9 = document.getElementById('btn9');
+    const mask7 = document.getElementById('mask7');
+    const modal7 = document.getElementById('modal7');
+
+    btn9.addEventListener('click', () => {
+      mask7.classList.remove('hidden');
+      modal7.classList.remove('hidden');
+    });
+
+      mask7.addEventListener('click', () => {
+      mask7.classList.add('hidden');
+      modal7.classList.add('hidden');
+    });
+
+    const btn10 = document.getElementById('btn10');
+    const mask8 = document.getElementById('mask8');
+    const modal8 = document.getElementById('modal8');
+
+    btn10.addEventListener('click', () => {
+      mask8.classList.remove('hidden');
+      modal8.classList.remove('hidden');
+    });
+
+      mask8.addEventListener('click', () => {
+      mask8.classList.add('hidden');
+      modal8.classList.add('hidden');
+    });
+
+    const btn11 = document.getElementById('btn11');
+    const mask9 = document.getElementById('mask9');
+    const modal9 = document.getElementById('modal9');
+
+    btn11.addEventListener('click', () => {
+      mask9.classList.remove('hidden');
+      modal9.classList.remove('hidden');
+    });
+
+      mask9.addEventListener('click', () => {
+      mask9.classList.add('hidden');
+      modal9.classList.add('hidden');
+    });
+
+    const btn12 = document.getElementById('btn12');
+    const mask10 = document.getElementById('mask10');
+    const modal10 = document.getElementById('modal10');
+
+    btn12.addEventListener('click', () => {
+      mask10.classList.remove('hidden');
+      modal10.classList.remove('hidden');
+    });
+
+      mask10.addEventListener('click', () => {
+      mask10.classList.add('hidden');
+      modal10.classList.add('hidden');
+    });
+
+    const btn13 = document.getElementById('btn13');
+    const mask11 = document.getElementById('mask11');
+    const modal11 = document.getElementById('modal11');
+
+    btn13.addEventListener('click', () => {
+      mask11.classList.remove('hidden');
+      modal11.classList.remove('hidden');
+    });
+
+      mask11.addEventListener('click', () => {
+      mask11.classList.add('hidden');
+      modal11.classList.add('hidden');
+    });
+
+    const btn14 = document.getElementById('btn14');
+    const mask12 = document.getElementById('mask12');
+    const modal12 = document.getElementById('modal12');
+
+    btn14.addEventListener('click', () => {
+      mask12.classList.remove('hidden');
+      modal12.classList.remove('hidden');
+    });
+
+      mask12.addEventListener('click', () => {
+      mask12.classList.add('hidden');
+      modal12.classList.add('hidden');
+    });
+
+    const btn15 = document.getElementById('btn15');
+    const mask13 = document.getElementById('mask13');
+    const modal13 = document.getElementById('modal13');
+
+    btn15.addEventListener('click', () => {
+      mask13.classList.remove('hidden');
+      modal13.classList.remove('hidden');
+    });
+
+      mask13.addEventListener('click', () => {
+      mask13.classList.add('hidden');
+      modal13.classList.add('hidden');
+    });
+
+    const btn16 = document.getElementById('btn16');
+    const mask14 = document.getElementById('mask14');
+    const modal14 = document.getElementById('modal14');
+
+    btn16.addEventListener('click', () => {
+      mask14.classList.remove('hidden');
+      modal14.classList.remove('hidden');
+    });
+
+      mask14.addEventListener('click', () => {
+      mask14.classList.add('hidden');
+      modal14.classList.add('hidden');
+    });
+
+    const btn17 = document.getElementById('btn17');
+    const mask15 = document.getElementById('mask15');
+    const modal15 = document.getElementById('modal15');
+
+    btn17.addEventListener('click', () => {
+      mask15.classList.remove('hidden');
+      modal15.classList.remove('hidden');
+    });
+
+      mask15.addEventListener('click', () => {
+      mask15.classList.add('hidden');
+      modal15.classList.add('hidden');
+    });
+
+    const btn18 = document.getElementById('btn18');
+    const mask16 = document.getElementById('mask16');
+    const modal16 = document.getElementById('modal16');
+
+    btn18.addEventListener('click', () => {
+      mask16.classList.remove('hidden');
+      modal16.classList.remove('hidden');
+    });
+
+      mask16.addEventListener('click', () => {
+      mask16.classList.add('hidden');
+      modal16.classList.add('hidden');
+    });
+    
+
+
+    </script>
+
     </ul>
     
     </body>
 
 </html>
+
+
+
+
+
+
+
+
+
+
