@@ -29,6 +29,7 @@ h5{
 
 .header{
     height:100px;
+    wight:100%;
     font-family: "";
     display: flex;
     justify-content: center;
