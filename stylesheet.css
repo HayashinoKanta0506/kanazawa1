@@ -42,7 +42,7 @@ h5{
 .header::before,
 .header::after {
   content: "";
-  width: 50%;
+  width: 46%;
   height: 8px;
   background-image: repeating-linear-gradient(-45deg, #777 0, #777 1px, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 50%);
   background-size: 8px 8px;
