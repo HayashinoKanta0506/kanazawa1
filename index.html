@@ -10,11 +10,12 @@
     <div class="header">
         <h1>景品<br>交換所</h1>
     </div>
+    <div>現在のポイント数<span id = "point"></span>pt</div>
     <script>
-      var point =　297;
-      document.write("<h5>" + "所有ポイント" + point + "ポイント" + "</h5>");
+      var myValue = localStorage.grtItem("myValue");
+        document.getElementById("point").textContent = myValue;
     </script>
-    </style>
+    
     <h3>景品一覧</h3>
     <div class="aaa">
         <h4>3ポイント景品</h4>
